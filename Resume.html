@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Satish - Resume</title>
     <style>
-        /* Reset & full height layout */
         html, body {
             margin: 0;
             padding: 0;
@@ -17,10 +16,8 @@
             flex-direction: column;
         }
 
-        /* Fixed header */
         header {
             background-color: #fff;
-            border-bottom: 15px solid #0800ff;
             padding: 1.5rem 0;
             text-align: center;
             position: fixed;
@@ -36,7 +33,6 @@
             text-decoration: underline;
         }
 
-        /* Navigation styling */
         nav {
             margin-top: 0.5rem;
         }
@@ -50,19 +46,17 @@
         }
 
         nav a:hover {
-            color: #0044ff;
+            color: #0400ff;
         }
 
-        /* Fullscreen iframe below header */
         iframe {
             flex: 1;
             border: none;
             width: 100%;
-            height: calc(100vh - 110px); /* Adjust for header height */
-            margin-top: 110px; /* Same as header height */
+            height: calc(100vh - 110px); 
+            margin-top: 110px;
         }
 
-        /* Footer (optional, for credits) */
         footer {
             text-align: center;
             padding: 1rem;
@@ -83,10 +77,8 @@
         </nav>
     </header>
 
-    <!-- PDF viewer -->
     <iframe src="Resume(updated).pdf"></iframe>
 
-    <!-- Footer -->
     <footer>
         &copy; 2025 Vaibhav Satish
     </footer>
