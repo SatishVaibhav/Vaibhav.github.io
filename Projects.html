@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Satish - Projects</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        body {
+            background-color: #000000;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-bottom: 15px solid #0800ff;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000000;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0044ff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #000000;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            font-family: cursive;
+            color: rgba(255, 255, 255, 0.565);
+            font-size: 18px;
+        }
+
+        .dropdown {
+            border: 2px solid aqua;
+            border-radius: 15px;
+            margin-bottom: 55px;
+            background-color: #ffffff;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .dropdown-header {
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #f0faff;
+            border-bottom: 2px solid aqua;
+            color: black;
+            user-select: none;
+            text-align: center;
+        }
+
+        .dropdown-header:hover {
+            background-color: #001eff;
+        }
+
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 10px;
+            background-color: white;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #000;
+        }
+
+        .dropdown-content.open {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Projects</h1>
+    <nav>
+        <a href="Resume.html">Resume</a>
+        <a href="index.html">Home</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="dropdown">
+        <div class="dropdown-header">UCI Themed Geoguessr</div>
+        <div class="dropdown-content">
+            <p>This is a campus-themed version of the game Geoguessr, featuring locations from the University of California, Irvine. Go to this <a href = "https://github.com/SatishVaibhav/UCIGeoGuesser">link</a> to learn more! </p>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header">Portfolio Website</div>
+        <div class="dropdown-content">
+            <p>A fully responsive personal portfolio showcasing my projects, resume, and contact details. If you're reading this then you've made it to my website successfully!</p>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-header">Mage Runner</div>
+        <div class="dropdown-content">
+            <p>A multi level, interactive game where the player must make it through a complex maze, while facing several obstacles through each twist and turn. Go to this <a href = "https://github.com/FaCiLeXp/PVE-FPS-B/tree/main/PVE%20FPS%20B">link</a> to find out more about the game!</p>
+        </div>
+    </div>
+
+
+    <div class="dropdown">
+        <div class="dropdown-header">Project(Coming Soon)</div>
+        <div class="dropdown-content">
+            <p>*Coming Soon*</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 Vaibhav Satish
+</footer>
+
+<script>
+    document.querySelectorAll('.dropdown-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const isOpen = content.classList.contains('open');
+
+            document.querySelectorAll('.dropdown-content').forEach(c => {
+                c.style.maxHeight = null;
+                c.classList.remove('open');
+            });
+
+            if (!isOpen) {
+                content.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+    
