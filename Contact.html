@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Satish - Contact</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-bottom: 10px solid #0800ff;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #000;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0044ff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+            border: 5px solid #00ddff;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            margin-top: 3px;
+
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeSlideUp 1s ease forwards;
+            animation-delay: 0.3s;
+        }
+
+        th, td {
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+
+        th {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #00ddff;
+            color: #000;
+            font-size: 20px;
+        }
+
+        td a {
+            color: #0800ff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        td a:hover {
+            color: #00ddff;
+            transform: scale(1.05);
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f2f2f27d;
+        }
+
+        img {
+            border-style: solid;
+            border-width: 10px;
+            border-color: rgb(0, 26, 255);
+            border-radius: 680px;
+            display: block;
+            margin: 30px auto 0 auto;
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fadeSlideDown 1s ease forwards;
+            animation-delay: 0.1s;
+        }
+
+        form {
+                margin-top: 2rem;
+                text-align: center; 
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #231f48;
+                padding: 2rem;
+                border-radius: 15px;
+                box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+
+                opacity: 0;
+                transform: translateY(30px);
+                animation: fadeSlideUp 1s ease forwards;
+                animation-delay: 0.6s;
+        }
+
+        form label {
+                color: #fff;
+                font-weight: bold;
+                display: block; 
+                margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+                width: 80%;          
+                padding: 10px;
+                margin: 0 auto 15px auto; 
+                border-radius: 8px;
+                border: 1px solid #00ddff;
+                background-color: #222;
+                color: #fff;
+                display: block;      
+        }
+
+        form button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                background: #0800ff;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                display: block;
+                margin: 0 auto;
+        }
+
+        form button:hover {
+                background: #00ddff;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeSlideUp 1s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        .social-links a {
+            margin: 0 1rem;
+            color: #00ddff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #ffffff;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        footer {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            font-family: cursive;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+        }
+
+        @keyframes fadeSlideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeSlideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="Projects.html">Projects</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <img src="IMG_3762.png" alt="Profile Picture" width="300" height="400">
+
+    <main>
+        <table>
+            <tr>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+            </tr>
+            <tr>
+                <!-- <td><a href="tel:+14253266246">+1 (425)-326-6246</a></td>
+                <td><a href="mailto:Vaibhavsatish21@hotmail.com">Vaibhavsatish21@hotmail.com</a></td> -->
+            </tr>
+        </table>
+    
+        <form action="https://formspree.io/f/xldlkyyo" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-success" style="color:#00ddff; margin-top:1rem; display:none;">
+            Thank you! Your message has been sent.
+        </div>
+        
+        <script>
+            const form = document.querySelector("form");
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const data = new FormData(form);
+                fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                    if (response.ok) {
+                        document.getElementById("form-success").style.display = "block";
+                        form.reset();
+                    } else {
+                        alert("Oops! There was a problem submitting your form.");
+                    }
+                }).catch(error => alert("Oops! There was a problem submitting your form."));
+            });
+        </script>
+
+        <div class="social-links">
+            <a href="https://github.com/SatishVaibhav" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/vaibhav-satish-796979278/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/vaibhav_satish_/" target="_blank">Instagram</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Vaibhav Satish
+    </footer>
+
+</body>
+</html>
